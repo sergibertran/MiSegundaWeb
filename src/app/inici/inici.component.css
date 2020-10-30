@@ -1,4 +1,17 @@
-.nav-link{
-font-size: 30px;
+article{
+
+padding: 20px;
+border: 20px;
+border-style: solid;
+border-color: #6b6f70;
+}
+body{
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+img{
+  margin: 20px;
+
 
 }

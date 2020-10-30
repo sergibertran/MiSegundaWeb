@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #4c4f50;">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" [routerLink]="['/inici']" routerLinkActive="active" >Inici <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" [routerLink]="['/events']" routerLinkActive="active" id="navbarDropdownMenuLink"
+         role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">Events</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Alta Event</a>
+          <a class="dropdown-item" href="#">Modificar event</a>
+          <a class="dropdown-item" href="#">Eliminar Event</a>
+        </div>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/quisom']" routerLinkActive="active" >Qui som</a>
+      </li>
+    </ul>
+  </div>
+</nav>

@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { IniciComponent } from './inici/inici.component';
 import { EventsComponent } from './events/events.component';
 import { QuisomComponent } from './quisom/quisom.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IniciComponent,
     EventsComponent,
-    QuisomComponent
+    QuisomComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
