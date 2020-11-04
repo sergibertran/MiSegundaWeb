@@ -1,0 +1,28 @@
+<app-header></app-header>
+
+<header>
+<h1>DAR DE ALTA EVENTO</h1>
+
+</header>
+
+
+<body>
+
+  <p>Event: <input type="text" name="event" #nEvent maxlength="15"></p>
+
+  <p>Correo: <input type="text" name="event" #Correo maxlength="15"></p>
+
+  <p>Lloc: <input type="text" name="event" #Lloc maxlength="15"></p>
+
+  <p>Descripcion: <input type="text" name="event" #Desc maxlength="15"></p>
+
+      <input
+      type="button"
+      (click)="Enviarnombres( nEvent.value, Correo.value,Lloc.value,Desc.value)"
+      value="Enviar"
+    />
+
+</body>
+
+
+<app-footer></app-footer>

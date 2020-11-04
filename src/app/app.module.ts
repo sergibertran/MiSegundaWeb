@@ -8,6 +8,9 @@ import { EventsComponent } from './events/events.component';
 import { QuisomComponent } from './quisom/quisom.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { AltaeventComponent } from './altaevent/altaevent.component';
+import { ModificareventComponent } from './modificarevent/modificarevent.component';
+import { EliminareventComponent } from './eliminarevent/eliminarevent.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { FooterComponent } from './footer/footer.component';
     EventsComponent,
     QuisomComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    AltaeventComponent,
+    ModificareventComponent,
+    EliminareventComponent
   ],
   imports: [
     BrowserModule,
