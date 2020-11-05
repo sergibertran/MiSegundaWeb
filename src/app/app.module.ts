@@ -11,6 +11,9 @@ import { FooterComponent } from './footer/footer.component';
 import { AltaeventComponent } from './altaevent/altaevent.component';
 import { ModificareventComponent } from './modificarevent/modificarevent.component';
 import { EliminareventComponent } from './eliminarevent/eliminarevent.component';
+import { DetalleTrabajadorComponent } from './quisom/detalle-trabajador/detalle-trabajador.component';
+import { ElementoTrabajadorComponent } from './quisom/elemento-trabajador/elemento-trabajador.component';
+import { ListaTrabajadorComponent } from './quisom/lista-trabajador/lista-trabajador.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { EliminareventComponent } from './eliminarevent/eliminarevent.component'
     FooterComponent,
     AltaeventComponent,
     ModificareventComponent,
-    EliminareventComponent
+    EliminareventComponent,
+    DetalleTrabajadorComponent,
+    ElementoTrabajadorComponent,
+    ListaTrabajadorComponent
   ],
   imports: [
     BrowserModule,

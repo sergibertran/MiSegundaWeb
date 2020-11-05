@@ -1,8 +1,14 @@
-<app-header></app-header>
+<div *ngIf="mostrar" class="row">
 
-<body>
-  <p>test</p>
-</body>
+  <div class="col">
+    <h3>Lista de Topos:</h3>
+    <app-lista-trabajador (informarEvent)="cambiarTrabajador($event)"></app-lista-trabajador>
+  </div>
+
+  <div class="col">
+    <h3>Detalle del Topo:</h3>
+    <app-detalle-trabajador [trabajador]="trabajadorSeleccionado"></app-detalle-trabajador>
+  </div>
 
 
-<app-footer></app-footer>
+</div>
