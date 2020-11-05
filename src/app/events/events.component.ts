@@ -6,14 +6,15 @@ import { stringify } from 'querystring';
 
 @Component({
   selector: 'app-events',
-  templateUrl: './events.component.html',
+  template: '<app-altaevent [nEvent]="nEvent"></app-altaevent>',
   styleUrls: ['./events.component.css']
 })
 export class EventsComponent implements OnInit {
 
   constructor() { }
   arrayEvents: evento[] = [];
-
+  @Output()
+  nEvent = "evento";
 
   ngOnInit(): void {
 
@@ -27,4 +28,5 @@ export class EventsComponent implements OnInit {
 
 
 }
+
 
