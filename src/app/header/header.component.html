@@ -7,15 +7,9 @@
       <li class="nav-item active">
         <a class="nav-link" [routerLink]="['/inici']" routerLinkActive="active" >Inici <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" [routerLink]="['/events']" routerLinkActive="active" id="navbarDropdownMenuLink"
-         role="button" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">Events</a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" [routerLink]="['/altaevent']" routerLinkActive="active" >Alta Event</a>
-          <a class="dropdown-item" [routerLink]="['/modificarevent']" routerLinkActive="active">Modificar event</a>
-          <a class="dropdown-item" [routerLink]="['/eliminarevent']" routerLinkActive="active">Eliminar Event</a>
-        </div>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/events']" routerLinkActive="active" >Events</a>
+
         <li class="nav-item">
           <a class="nav-link" [routerLink]="['/quisom']" routerLinkActive="active" >Qui som</a>
       </li>

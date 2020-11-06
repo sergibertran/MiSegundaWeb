@@ -1,16 +1,19 @@
 
 
+    <ul *ngFor="let item of arrayEvents; let i = index" [attr.data-index]="i">
+      <li>{{item.nEvent}}</li>
+      <li>{{item.Lloc}}</li>
+      <li>{{item.Correo}}</li>
+      <li>{{item.Desc}}</li>
 
 
-  <ul>
-    <li *ngFor="let evento of evento">
+      <label>{{ i }}</label>
 
-    </li>
+      <input type="button" (click)="eliminar(i)" value="Enviar"/>
 
-  </ul>
-
+    </ul>
 
 
-
+<app-altaevent (altaEvento)="addEvento($event)"></app-altaevent>
 
 

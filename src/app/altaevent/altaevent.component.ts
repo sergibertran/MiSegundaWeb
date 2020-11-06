@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { evento } from '../models/evento.model';
 
 @Component({
@@ -8,18 +8,24 @@ import { evento } from '../models/evento.model';
 })
 export class AltaeventComponent implements OnInit {
 
+  @Output() altaEvento = new EventEmitter<evento>();
+
   constructor() { }
-  @Input() nEvent;
+
 
   ngOnInit(): void {
   }
 
+  Enviarnombres(nEvent,Lloc,Correo,Desc) {
 
 
-  Enviarnombres( nEvent, Correo,Lloc,Desc) {
+  this.altaEvento.emit(new evento(nEvent,Lloc,Correo,Desc));
+
+}
+
 
     }
-}
+
 
 
 
