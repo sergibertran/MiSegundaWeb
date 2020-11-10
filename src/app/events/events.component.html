@@ -10,10 +10,11 @@
       <label>{{ i }}</label>
 
       <input type="button" (click)="eliminar(i)" value="Enviar"/>
+      <input type="button" (click)="modificar(i)" value="Modificar"/>
 
     </ul>
 
 
-<app-altaevent (altaEvento)="addEvento($event)"></app-altaevent>
+<app-altaevent (altaEvento)="addEvento($event)"  [mEvent]="mEvent"></app-altaevent>
 
 

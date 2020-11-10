@@ -14,6 +14,7 @@ import { EliminareventComponent } from './eliminarevent/eliminarevent.component'
 import { DetalleTrabajadorComponent } from './quisom/detalle-trabajador/detalle-trabajador.component';
 import { ElementoTrabajadorComponent } from './quisom/elemento-trabajador/elemento-trabajador.component';
 import { ListaTrabajadorComponent } from './quisom/lista-trabajador/lista-trabajador.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ListaTrabajadorComponent } from './quisom/lista-trabajador/lista-trabaj
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

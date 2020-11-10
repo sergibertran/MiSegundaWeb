@@ -6,17 +6,17 @@
 
 
 
-  <p>Event: <input type="text" name="event" #nEvent maxlength="15"></p>
+  <p>Event: <input type="text" [(ngModel)]="mForm.nEvent"  maxlength="15"></p>
 
-  <p>Lloc: <input type="text" name="event" #Lloc maxlength="15"></p>
+  <p>Lloc: <input type="text" [(ngModel)]="mForm.Lloc"  maxlength="15"></p>
 
-  <p>Correo: <input type="text" name="event" #Correo maxlength="15"></p>
+  <p>Correo: <input type="text" [(ngModel)]="mForm.Correo"  maxlength="15"></p>
 
-  <p>Descripcion: <input type="text" name="event" #Desc maxlength="15"></p>
+  <p>Descripcion: <input type="text" [(ngModel)]="mForm.Desc" maxlength="15"></p>
 
       <input
       type="button"
-      (click)="Enviarnombres( nEvent.value, Lloc.value,Correo.value,Desc.value)"
+      (click)="Enviarnombres()"
       value="Enviar"
     />
 

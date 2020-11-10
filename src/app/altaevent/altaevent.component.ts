@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnChanges, Output, EventEmitter, Input} from '@angular/core';
 import { evento } from '../models/evento.model';
 
 @Component({
@@ -6,25 +6,31 @@ import { evento } from '../models/evento.model';
   templateUrl:'./altaevent.component.html',
   styleUrls: ['./altaevent.component.css']
 })
-export class AltaeventComponent implements OnInit {
+export class AltaeventComponent implements OnChanges {
 
   @Output() altaEvento = new EventEmitter<evento>();
+  @Input() mEvent: evento;
+
+  mForm = new evento('', '', '', '');
 
   constructor() { }
 
 
-  ngOnInit(): void {
+  ngOnChanges(changes):void{
+    if(this.mEvent !== undefined){
+      this.mForm = this.mEvent;
+    }
   }
 
-  Enviarnombres(nEvent,Lloc,Correo,Desc) {
-
-
-  this.altaEvento.emit(new evento(nEvent,Lloc,Correo,Desc));
+  Enviarnombres() {
+    if(!this.mEvent){
+      this.altaEvento.emit(this.mForm);
+    }
+    this.mEvent = undefined;
+    this.mForm = new evento('', '', '', '');
+  }
 
 }
-
-
-    }
 
 
 

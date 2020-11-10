@@ -9,31 +9,27 @@ import { stringify } from 'querystring';
   templateUrl: './events.component.html',
   styleUrls: ['./events.component.css']
 })
-export class EventsComponent implements OnInit {
+export class EventsComponent {
 
   constructor() { }
 
   arrayEvents: evento[] = [];
+  mEvent: evento;
 
-
-
-  ngOnInit(): void {
-
-  }
 
   addEvento(test){
-
-      this.arrayEvents.push(test)
-
-
+    this.arrayEvents.push(test)
   }
-
 
   eliminar(i){
     console.log(i);
     this.arrayEvents.splice(i,1);
 
-    }
+  }
+
+  modificar(i){
+    this.mEvent = this.arrayEvents[i];
+  }
 
 
 
