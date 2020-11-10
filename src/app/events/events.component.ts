@@ -22,7 +22,7 @@ export class EventsComponent {
   }
 
   eliminar(i){
-    console.log(i);
+
     this.arrayEvents.splice(i,1);
 
   }

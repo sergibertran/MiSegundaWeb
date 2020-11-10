@@ -1,22 +1,23 @@
-
+<div>
 <h1>DAR DE ALTA EVENTO</h1>
 
 
 
+  <p>Event: <input type="text" #vmForm [(ngModel)]="mForm.nEvent"  maxlength="30"></p>
 
+  <p>Lloc: <input type="text" #vLloc [(ngModel)]="mForm.Lloc"  maxlength="30"></p>
 
+  <p>Correo: <input type="text" #vCorreo [(ngModel)]="mForm.Correo"  maxlength="30"></p>
+  <div [ngSwitch]="mostrarInfo">
+    <div id="correcto"  *ngSwitchCase="'Correcto'">Correcto</div>
+    <div id="incorrecto"     *ngSwitchCase="'Incorrecto'">Incorrecto</div>
+  </div>
 
-  <p>Event: <input type="text" [(ngModel)]="mForm.nEvent"  maxlength="15"></p>
-
-  <p>Lloc: <input type="text" [(ngModel)]="mForm.Lloc"  maxlength="15"></p>
-
-  <p>Correo: <input type="text" [(ngModel)]="mForm.Correo"  maxlength="15"></p>
-
-  <p>Descripcion: <input type="text" [(ngModel)]="mForm.Desc" maxlength="15"></p>
-
+  <p>Descripcion: <textarea class="form-control" id="exampleFormControlTextarea3" rows="3" #vDesc [(ngModel)]="mForm.Desc" maxlength="300"></textarea></p>
       <input
       type="button"
+      (click)="Corregir(mForm.nEvent,vLloc,mForm.Correo,mForm.Desc)"
       (click)="Enviarnombres()"
       value="Enviar"
     />
-
+  </div>

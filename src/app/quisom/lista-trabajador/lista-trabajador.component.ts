@@ -14,20 +14,20 @@ export class ListaTrabajadorComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.trabajador[0].nombre = 'Perico';
-    this.trabajador[0].apellidos = 'Kiko';
-    this.trabajador[0].imagen = 'https://ath2.unileverservices.com/wp-content/uploads/sites/5/2019/05/istock-1006793068-e1557405548962-782x439.jpg';
-    this.trabajador[0].descripcion = 'Kiko';
+    this.trabajador[0].nombre = 'Sergi';
+    this.trabajador[0].apellidos = 'Bertran';
+    this.trabajador[0].imagen = 'https://upload.wikimedia.org/wikipedia/commons/1/12/User_icon_2.svg';
+    this.trabajador[0].descripcion = 'alumno daw2';
 
-    this.trabajador[1].nombre = 'Mariano';
-    this.trabajador[1].apellidos = 'Kiko';
-    this.trabajador[1].imagen = 'Kiko';
-    this.trabajador[1].descripcion = 'Kiko';
+    this.trabajador[1].nombre = 'Nelson';
+    this.trabajador[1].apellidos = 'Perez';
+    this.trabajador[1].imagen = 'https://upload.wikimedia.org/wikipedia/commons/1/12/User_icon_2.svg';
+    this.trabajador[1].descripcion = 'profesor lenguaje marcas';
 
-    this.trabajador[2].nombre = 'Kiko';
-    this.trabajador[2].apellidos = 'Kiko';
-    this.trabajador[2].imagen = 'Kiko';
-    this.trabajador[2].descripcion = 'Kiko';
+    this.trabajador[2].nombre = 'Alex';
+    this.trabajador[2].apellidos = 'Rodriguez';
+    this.trabajador[2].imagen = 'https://upload.wikimedia.org/wikipedia/commons/1/12/User_icon_2.svg';
+    this.trabajador[2].descripcion = 'es weno';
   }
   informarTrabajador(event) {
     this.informarEvent.emit(event);

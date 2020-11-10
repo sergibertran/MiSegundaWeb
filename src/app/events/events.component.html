@@ -1,20 +1,19 @@
 
 
-    <ul *ngFor="let item of arrayEvents; let i = index" [attr.data-index]="i">
-      <li>{{item.nEvent}}</li>
-      <li>{{item.Lloc}}</li>
-      <li>{{item.Correo}}</li>
-      <li>{{item.Desc}}</li>
+<ul *ngFor="let item of arrayEvents; let i = index" [attr.data-index]="i">
+    <div class="card">
+      <h5 class="card-header">{{item.nEvent}}</h5>
+      <div class="card-body">
+        <h5 class="card-title">{{item.Lloc}}</h5>
 
-
-      <label>{{ i }}</label>
-
-      <input type="button" (click)="eliminar(i)" value="Enviar"/>
-      <input type="button" (click)="modificar(i)" value="Modificar"/>
-
-    </ul>
-
+        <li>{{item.Correo}}</li>
+        <li>{{item.Desc}}</li>
+        <br>
+        <input class="btn btn-danger" type="button" (click)="eliminar(i)" value="Eliminar"/>
+        <input class="btn btn-success" type="button" (click)="modificar(i)" value="modificar"/>
+      </div>
+    </div>
+  </ul>
 
 <app-altaevent (altaEvento)="addEvento($event)"  [mEvent]="mEvent"></app-altaevent>
-
 
